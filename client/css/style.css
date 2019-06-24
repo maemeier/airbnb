@@ -4,47 +4,116 @@ body{
 
 .header{
   grid-column: 1;
-  background-color: pink;
+  background: url('../img/header.jpg') no-repeat center;
+  background-size: cover;
   margin-top: 100px;
   height: 300px;
-  margin-left: 80px;
-  margin-right: 80px;
-  border-radius: 20px
+  margin-left: 100px;
+  margin-right:100px;
+  border-radius: 20px;
+
 }
 
 
 .middle{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 4fr;
+  column-gap: 60px
 
 }
 h4.top{
   padding-top: 80px;
   padding-left: 60px;
-  font-family: Open Sans
+  font-family: Open Sans;
+  color: white
 }
 h4{
   padding-left: 60px;
-  font-family: Open Sans
+  font-family: Open Sans;
+  color: white
 }
 h2{
   padding-top: 20px;
   padding-left: 60px;
-  font-family: Open Sans
+  font-family: Open Sans;
+  color: white
+}
+h3{
+  font-family: Open Sans;
+  font-weight: 20px;
+  padding-bottom:10px
 }
 h5{
   padding-left: 60px;
   font-family: Open Sans;
+  color: white
 }
 .sidebar{
-  margin-left: 80px;
+  margin-left: 100px;
   background-color: lightblue;
-  margin-top: 30px;
-  height: 250px
+  margin-top: 50px;
+  height: 330px
 }
-.recommend{
-  margin-right: 80px;
-  background-color: grey;
-  margin-top: 30px;
-  margin-left: 20px
+
+.content{
+
+  margin-top: 50px;
+  height: 250px;
+  margin-right: 100px
+}
+.inside{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px
+}
+.Germany{
+  background-color: lightpink;
+  background: url('../img/germany.jpg') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px;
+
+}
+.Thailand{
+  background-color: lightpink;
+  background: url('../img/thailand.jpg') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+.Canada{
+  background-color: lightpink;
+  background: url('../img/canada.jpg') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+.Greece{
+  background-color: lightpink;
+  background: url('../img/greece.jpg') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+.allRooms{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* background-color: grey; */
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right:100px;
+  grid-gap: 20px
+}
+.room{
+  background: url('../img/r1.jpg') no-repeat center;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+.type{
+  margin-top: 220px
+}
+p{
+  
 }

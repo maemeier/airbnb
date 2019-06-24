@@ -1,0 +1,21 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "Air BnB clone ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "airbnb",
+    "rooms",
+    "apartment",
+    "js",
+    "project"
+  ],
+  "author": "Kangsadan Palioudis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
