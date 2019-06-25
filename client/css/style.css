@@ -6,7 +6,13 @@ h1{
   font-family: Open sans;
   font-size: 20px;
 }
-
+.logoText{
+  display: grid;
+  grid-template-columns: 7% 93%;
+}
+h1.textWithLogo{
+  margin-top: 70px
+}
 img{
   width: 60px;
   height: 60px;
@@ -46,7 +52,7 @@ p.inText{
   font-weight: bold;
 }
 h4.top{
-  padding-top: 80px;
+  padding-top: 120px;
   padding-left: 60px;
   font-family: Open Sans;
   color: white
@@ -87,7 +93,7 @@ h5{
 .inside{
   display:grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  column-gap: 40px
+  column-gap: 10px
 }
 .Germany{
   background-color: lightpink;
@@ -122,25 +128,72 @@ h5{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* background-color: grey; */
-  height: 300px;
+  height: 250px;
   margin-top: 10px;
   margin-left: 100px;
   margin-right:100px;
-  grid-gap: 20px
+  grid-gap: 20px;
+
+  /* border: solid 1px; */
 }
-.room{
+.rooms{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.roomPic{
   background: url('../img/r5.jpg') no-repeat center;
   background-size: cover;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
+
 }
-.type{
-  margin-top: 220px
+.roomText{
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  height: 120px
 }
 .fas{
   color: #F9A602;
-  margin-top: 10px;
   width: 13px;
-  height: 10px
+  height: 10px;
+}
+.fas:first-of-type {
+  margin-left: 30px
+}
+p{
+  margin-left: 30px;
+  grid-row-gap: 10px
+}
+.row{
+  display: flex;
+  border-color: red;
+  padding: 10px;
+
+}
+.box{
+  width: 300px;
+  height:350px;
+  background-color: white;
+  margin-right: 10px
+}
+.inner-top-box{
+  height: 65%;
+  background-color: pink;
+  background: url('../img/r5.jpg') no-repeat center;
+  background-size: cover;
+}
+.inner-bottom-box{
+  height: 35%;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+h6{
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-family: Open Sans
+
 
 }
