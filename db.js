@@ -3,7 +3,7 @@ const {Client} = require('pg')
 
 // create connection
 const db = new Client({
-  connectionString: 'postgres://maemeier:karate31@localhost:5432/maemeier'
+  connectionString: 'postgres://maemeier:karate31@localhost:5432/airbnb'
 })
 
 // connect to database and test

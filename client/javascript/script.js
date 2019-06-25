@@ -22,14 +22,14 @@ rooms_ui.insertAdjacentHTML('beforeEnd',`
     <div id="box">
       <div class="inner-top-box style="background-image: url('${p.image}')></div>
       <div class="inner-bottom-box">
-        <h6> ${p.type} </h6>
+        <h6> ${p.name} </h6>
         <h6> ${p.cities}, ${p.countries}</h6>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star-half-alt"></i>
-        <h6> ${p.price} CHF </h6>
+        <h6> ${p.price} CHF per Night</h6>
 
       </div>
     </div>

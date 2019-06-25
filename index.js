@@ -19,6 +19,10 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/api/rooms', require('./controllers/rooms_get'))
+app.get('/api/cities', require('./controllers/cities_get'))
+app.get('/api/countries', require('./controllers/countries_get'))
+
+
 
 app.listen(3000,()=>{
   console.log(`Server listinging on port 3000`);
