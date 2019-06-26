@@ -102,6 +102,14 @@ h5{
   height: 200px;
   border-radius: 10px;
 
+
+/* .Germany:hover{
+  background: #202020;
+  height: 200px;
+  background:rgba(0,0,0,0.1);
+  opacity: 50; */
+
+
 }
 .Thailand{
   background-color: lightpink;
@@ -182,7 +190,8 @@ p{
 .inner-top-box{
   height: 65%;
   background-color: pink;
-  background: url('../img/r5.jpg') no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   border-radius: 5px 5px 0px 0px
 }
@@ -198,6 +207,10 @@ h6{
   padding-left: 30px;
   padding-top: 10px;
   font-family: Open Sans
-
+}
+a  {
+  padding-left: 20px;
+  text-decoration: none;
+  color:black
 
 }
