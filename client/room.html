@@ -15,6 +15,94 @@
 
   </head>
   <body>
+  <script>
+
+
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+
+  </script>
+
+  <!-- menu -->
+  <div class="navbar">
+    <div class="subnav">
+      <button class="subnavbtn">Country <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#bangkok">Thailand </a>
+        <a href="#berlin">Germany </a>
+        <a href="#Montrea">Greece </a>
+        <a href="#Montrea">Canada </a>
+        <a href="#Montrea">Switzerland </a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">City <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#bangkok">Bangkok</a>
+        <a href="#berlin">Berlin</a>
+        <a href="#Montrea">Montreal</a>
+        <a href="#Montrea">Gottingen</a>
+        <a href="#Montrea">Athens</a>
+        <a href="#Montrea">Zurich</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Price <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#bring"> < 50 CHF </a>
+        <a href="#deliver">51 - 100 CHF</a>
+        <a href="#package">101 - 200 CHF</a>
+        <a href="#express"> >200 CHF</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Type <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#link1">Home</a>
+        <a href="#link2">Apartment</a>
+        <a href="#link3">Room</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Rating <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#link2">1</a>
+        <a href="#link3">2</a>
+        <a href="#link3">3</a>
+        <a href="#link3">4</a>
+        <a href="#link3">5</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Rooms <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#link2">Studio</a>
+        <a href="#link3">One Bed Room</a>
+        <a href="#link3">Two Bed Rooms</a>
+        <a href="#link3">Three Bed Rooms</a>
+        <a href="#link3">Penthouse</a>
+      </div>
+    </div>
+  </div>
+  <!-- end menu -->
+
     <!-- <h1>Book unique places to stay </h1> -->
     <div class="logoText">
     <img src="/img/logo.png" alt="">
@@ -33,14 +121,13 @@
 
       <div class="sidebar">
         <nav class="list">
-          <li><a href="Country">Countries</a></li>
-          <li><a href="City">Cities</a></li>
-          <li><a href="Price">Price</a></li>
-          <li><a href="Rating">Rating</a></li>
-          <li><a href="Type">Type</a></li>
-          <li><a href="Room">Room</a></li>
-          <button type="button" name="button"></button>
-        </nav>
+          <!-- Country -->
+
+<!-- city -->
+
+<!-- middle -->
+
+
       </div>
       <div class="content">
         <!-- <i class="fas fa-medal"> --><h3> Recomendation for you</h3>

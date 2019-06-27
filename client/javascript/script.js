@@ -1,6 +1,5 @@
 window.onload = ()=>{
 
-}
 
 axios.get('/api/rooms').then((res)=>{
   // console.log('res' res.data);
@@ -14,6 +13,7 @@ let allRooms = res.data
 
 //foreach
 allRooms.forEach((p) => {
+  console.log(p);
 rooms_ui.insertAdjacentHTML('beforeEnd',`
 <div class="allRooms">
 
@@ -42,3 +42,6 @@ rooms_ui.insertAdjacentHTML('beforeEnd',`
     console.log('Err', err)
 
   })//end of products promise catch function
+
+
+}

@@ -34,9 +34,23 @@ img{
   list-style: none;
   line-height: 2.3;
   font-family: Open sans;
-  padding-top:10px;
+  /* padding-top:10px; */
   font-size: 15px
 }
+.dropdown{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  text-decoration: none;
+}
+.dropdown:hover .mainmenu{
+  display: block;
+}
+.dropdown:hover{
+  background-color: white
+}
+/* middle box */
 .middle{
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -81,8 +95,89 @@ h5{
   margin-left: 100px;
   margin-top: 50px;
   height: 310px;
-  padding-top: 20px
+  padding-top: 20px;
+  font-family: Open sans
 }
+
+/* begin sidebar */
+
+/* Dropdown Button */
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-left: 100px;
+  margin-right: 100px
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Open sans
+  margin: 0;
+
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #ED6665;
+  
+
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ED6665;
+  width: 100%;
+  z-index: 1;
+  margin-left: 109px;
+  font-family: Open sans
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* end sidebar */
 
 .content{
 
@@ -101,14 +196,6 @@ h5{
   background-size: cover;
   height: 200px;
   border-radius: 10px;
-
-
-/* .Germany:hover{
-  background: #202020;
-  height: 200px;
-  background:rgba(0,0,0,0.1);
-  opacity: 50; */
-
 
 }
 .Thailand{
@@ -190,9 +277,10 @@ p{
 .inner-top-box{
   height: 65%;
   background-color: pink;
+  /* background-image: url('../img/r1.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 5px 5px 0px 0px
 }
 .inner-bottom-box{
