@@ -23,7 +23,7 @@ app.get('/', (req,res)=>{
 app.get('/api/rooms', require('./controllers/rooms_get'))
 // app.post('/api/rooms', require('./controllers/rooms_create'))
 
-app.get('/api/cities', require('./controllers/cities_get'))
+// app.get('/api/cities', require('./controllers/cities_get'))
 app.get('/api/countries', require('./controllers/countries_get'))
 
 
