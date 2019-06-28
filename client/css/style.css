@@ -143,7 +143,7 @@ h5{
 /* Add a red background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: #ED6665;
-  
+
 
 }
 
@@ -277,7 +277,7 @@ p{
 .inner-top-box{
   height: 65%;
   background-color: pink;
-  /* background-image: url('../img/r1.jpg'); */
+  background-image: url('../img/r2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -302,3 +302,8 @@ a  {
   color:black
 
 }
+/* .sidebar{
+  background-color: pink;
+  height: 200px;
+  width: 200px
+} */

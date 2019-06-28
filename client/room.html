@@ -6,6 +6,7 @@
 <script src="https://kit.fontawesome.com/6496909f18.js"></script>
 <script src="/javascript/axios.min.js"></script>
 <script src="/javascript/script.js"></script>
+<script src="/javascript/filter.js"></script>
 
 </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -18,86 +19,67 @@
   <script>
 
 
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
 
   </script>
 
   <!-- menu -->
   <div class="navbar">
     <div class="subnav">
-      <button class="subnavbtn">Country <i class="fa fa-caret-down"></i></button>
+      <button id="country" class="subnavbtn">Country <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#bangkok">Thailand </a>
-        <a href="#berlin">Germany </a>
-        <a href="#Montrea">Greece </a>
-        <a href="#Montrea">Canada </a>
-        <a href="#Montrea">Switzerland </a>
+        <p id="thailand" href="#thailand">Thailand </p>
+        <p id="Germany" href="#thailand">Germany </p>
+        <p id="canada" href="#thailand">Canada </p>
+        <p id="greece" href="#thailand">Greece </p>
+        <p id="swiss" href="#thailand">Switzerland </p>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">City <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#bangkok">Bangkok</a>
+        <a id="bangkok" href="#bangkok">Bangkok</a>
         <a href="#berlin">Berlin</a>
         <a href="#Montrea">Montreal</a>
-        <a href="#Montrea">Gottingen</a>
-        <a href="#Montrea">Athens</a>
-        <a href="#Montrea">Zurich</a>
+        <a href="#Gottingen">Gottingen</a>
+        <a href="#Athens">Athens</a>
+        <a href="#Zurich">Zurich</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Price <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#bring"> < 50 CHF </a>
+        <a href="#cheap"> < 50 CHF </a>
         <a href="#deliver">51 - 100 CHF</a>
         <a href="#package">101 - 200 CHF</a>
-        <a href="#express"> >200 CHF</a>
+        <a href="#expensive"> >200 CHF</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Type <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#link1">Home</a>
-        <a href="#link2">Apartment</a>
-        <a href="#link3">Room</a>
+        <a href="#Home">Home</a>
+        <a href="#Appartment">Apartment</a>
+        <a href="#Room">Room</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Rating <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#link2">1</a>
-        <a href="#link3">2</a>
-        <a href="#link3">3</a>
-        <a href="#link3">4</a>
-        <a href="#link3">5</a>
+        <a href="#star">1 star</a>
+        <a href="#star">2 stars</a>
+        <a href="#star">3 stars</a>
+        <a href="#star">4 stars</a>
+        <a href="#star">5 stars</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Rooms <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#link2">Studio</a>
-        <a href="#link3">One Bed Room</a>
-        <a href="#link3">Two Bed Rooms</a>
-        <a href="#link3">Three Bed Rooms</a>
-        <a href="#link3">Penthouse</a>
+        <a href="#Studio">Studio</a>
+        <a href="#oneBed">One Bed Room</a>
+        <a href="#twoBed">Two Bed Rooms</a>
+        <a href="#threeBed">Three Bed Rooms</a>
+        <a href="#Pent">Penthouse</a>
       </div>
     </div>
   </div>
@@ -120,12 +102,8 @@
     <div class="middle">
 
       <div class="sidebar">
-        <nav class="list">
-          <!-- Country -->
 
-<!-- city -->
 
-<!-- middle -->
 
 
       </div>
