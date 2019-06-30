@@ -34,13 +34,13 @@ axios.get('/api/rooms').then((res)=>{
 
   // city
   axios.get('api/cities').then((res) => {
-    let showFilter = document.getElementById('bangkok')
+    let showFilter = document.getElementById('city')
     let rooms = res.data
     console.log('res.data', res.data);
     rooms.forEach((e) => {
       showFilter.insertAdjacentHTML('afterBegin', `
-        <a href="#bangkok" id="${e.id}">${e.city}</a>
-      `)
+      <button id="city" class="subnavbtn">City <i class="fa fa-caret-down"></i></button>`
+    )
     })
   })
 
